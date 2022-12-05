@@ -78,7 +78,25 @@
                               </div>
                     </div>
           </footer>
-          <script src="app.js"></script>
+          <script>
+                    const searchBoxContainer = document.querySelector(".search-box-container");
+                    const searchBoxContainerInput = document.querySelector(".search-box-container input");
+                    let boxShadow = false;
+                    searchBoxContainerInput.addEventListener("click", () => {
+                              if (boxShadow === false) {
+                                        searchBoxContainer.style.boxShadow = "0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1)";
+                                        boxShadow = true;
+                              }
+                              else {
+                                        searchBoxContainer.style.boxShadow = "none";
+                                        boxShadow = false;
+                              }})
+                    document.addEventListener("click", (e) => {
+                              if (boxShadow === true && e.target != searchBoxContainerInput) {
+                                        searchBoxContainer.style.boxShadow = "none";
+                                        boxShadow = false;
+                              }})
+          </script>
           <script src="https://kit.fontawesome.com/c2e884e60d.js" crossorigin="anonymous"></script>
 </body>
 </html>
