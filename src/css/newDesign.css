@@ -1,12 +1,13 @@
-body
+/* body
 {
           display: flex;
           align-items: center;
           justify-content: center;
-}
+} */
 /* background-color: #e4e7ee; */
 .new-design
 {
+          display: none;
           color: #6B728E;
           background-color: rgba(237, 240, 245, 0.1);
           border-radius: 16px;
@@ -128,6 +129,8 @@ body
 }
 .new-design main .search-box-area .search-box input
 {
+          
+          padding-left: 16px;
           height: 100%;
           max-width: auto;
           width: 500px;
