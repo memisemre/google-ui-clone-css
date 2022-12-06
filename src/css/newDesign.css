@@ -1,10 +1,3 @@
-/* body
-{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-} */
-/* background-color: #e4e7ee; */
 .new-design
 {
           display: none;
@@ -118,7 +111,7 @@
 {
           margin-top: 1vh;
           height: 3vh;
-          width: 100%;
+          width: auto;
           background: rgba(238, 238, 238, 0.1);
           border-radius: 16px;
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -129,7 +122,6 @@
 }
 .new-design main .search-box-area .search-box input
 {
-          
           padding-left: 16px;
           height: 100%;
           max-width: auto;
