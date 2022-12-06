@@ -129,7 +129,8 @@ body
 .new-design main .search-box-area .search-box input
 {
           height: 100%;
-          width: 100%;
+          max-width: auto;
+          width: 500px;
           border: none;
           background-color: transparent;
 }
