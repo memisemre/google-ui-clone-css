@@ -7,78 +7,80 @@
           <title>Google</title>
           <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
           <link rel="stylesheet" href="./src/css/reset.css">
-          <link rel="stylesheet" href="./src/css/main.css">
+          <link rel="stylesheet" href="./src/css/oldDesign.css">
+          <link rel="stylesheet" href="./src/css/newDesign.css">
 </head>
 <body>
-          <nav>
-                    <a href="#" class="gmail-button">Gmail</a>
-                    <a href="#" class="images-button">Görseller</a>
-                    <div class="apps-button-container">
-                              <a href="#" >
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                              </a>  
-                    </div>
-                    <div class="profile-button-container">
-                               <a href="#">E</a>
-                    </div>
-          </nav>
-          <main>
-                    <div class="logo">
-                              <img src="./src/img/google-logo.png" alt="logo">
-                    </div>
-                    <div class="search-box-container">
-                              <div class="search-icon">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="old-design" style="display:none">
+                    <nav>
+                              <a href="#" class="gmail-button">Gmail</a>
+                              <a href="#" class="images-button">Görseller</a>
+                              <div class="apps-button-container">
+                                        <a href="#" >
+                                                  <div></div>
+                                                  <div></div>
+                                                  <div></div>
+                                                  <div></div>
+                                                  <div></div>
+                                                  <div></div>
+                                                  <div></div>
+                                                  <div></div>
+                                                  <div></div>
+                                        </a>  
                               </div>
-                              <input type="text">
-                              <div class="icon-container">
-                                        <div class="img-container keyboard">
-                                                  <img src="/src/img/keyboard.png" alt="">
+                              <div class="profile-button-container">
+                                        <a href="#">E</a>
+                              </div>
+                    </nav>
+                    <main>
+                              <div class="logo">
+                                        <img src="./src/img/google-logo.png" alt="logo">
+                              </div>
+                              <div class="search-box-container">
+                                        <div class="search-icon">
+                                                  <i class="fa-solid fa-magnifying-glass"></i>
                                         </div>
-                                        <div class="img-container">
-                                                  <img src="./src/img/microphone.webp" alt="">
-                                         </div>
-                                        <div class="img-container">
-                                                  <img src="./src/img/searchbox.svg" alt="">
+                                        <input type="text">
+                                        <div class="icon-container">
+                                                  <div class="img-container keyboard">
+                                                            <img src="/src/img/keyboard.png" alt="">
+                                                  </div>
+                                                  <div class="img-container">
+                                                            <img src="./src/img/microphone.webp" alt="">
+                                                  </div>
+                                                  <div class="img-container">
+                                                            <img src="./src/img/searchbox.svg" alt="">
+                                                  </div>
                                         </div>
                               </div>
-                    </div>
-                    <div class="butons-area">
-                              <button class="search-for-google">Google'da Ara</button>
-                              <button class="search-for-google">Kendimi şanslı hissediyorum.</button>
-                    </div>   
-          </main>
-          <footer>
-                    <div class="top-menu">Türkiye</div>
-                    <div class="bottom-menu">
-                              <div class="left-buttons">
-                                        <a href="#">Hakkında</a>
-                                        <a href="#">Reklam</a>
-                                        <a href="#">İşletme</a>
-                                        <a href="#">Arama nasıl çalışır?</a>
+                              <div class="butons-area">
+                                        <button class="search-for-google">Google'da Ara</button>
+                                        <button class="search-for-google">Kendimi şanslı hissediyorum.</button>
+                              </div>   
+                    </main>
+                    <footer>
+                              <div class="top-menu">Türkiye</div>
+                              <div class="bottom-menu">
+                                        <div class="left-buttons">
+                                                  <a href="#">Hakkında</a>
+                                                  <a href="#">Reklam</a>
+                                                  <a href="#">İşletme</a>
+                                                  <a href="#">Arama nasıl çalışır?</a>
+                                        </div>
+                                        <div class="space"></div>
+                                        <a class="text">
+                                                  <img src="./src/img/leaf.png" alt="">  
+                                                  2007'den bu yana karbon nötr
+                                        </p>
+                                        <div class="space"></div>
+                                        <div class="right-buttons">
+                                                  <a href="#">Gizlilik</a>
+                                                  <a href="#">Şartlar</a>
+                                                  <a href="#">Ayarlar</a>
+                                        </div>
                               </div>
-                              <div class="space"></div>
-                              <a class="text">
-                                        <img src="./src/img/leaf.png" alt="">  
-                                        2007'den bu yana karbon nötr
-                              </p>
-                              <div class="space"></div>
-                              <div class="right-buttons">
-                                        <a href="#">Gizlilik</a>
-                                        <a href="#">Şartlar</a>
-                                        <a href="#">Ayarlar</a>
-                              </div>
-                    </div>
-          </footer>
-          <script>
+                    </footer>
+                    <script>
                     const searchBoxContainer = document.querySelector(".search-box-container");
                     const searchBoxContainerInput = document.querySelector(".search-box-container input");
                     let boxShadow = false;
@@ -97,6 +99,16 @@
                                         boxShadow = false;
                               }})
           </script>
+          </div>
+          <div class="new-design">
+                    <nav>
+                              <div class="location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                              </div>
+                              <div class="lang"></div>
+                    </nav>
+          </div>
+          
           <script src="https://kit.fontawesome.com/c2e884e60d.js" crossorigin="anonymous"></script>
 </body>
 </html>
